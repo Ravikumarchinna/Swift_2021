@@ -25,6 +25,7 @@ class ImagesDownload_VC: UIViewController {
         self.images_DownlaodUrls { (response, check) in
             if check == true{
                 self.arr_imageUrls = response
+                print("")
             }
         }
         
