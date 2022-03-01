@@ -40,6 +40,28 @@ class ViewController: UIViewController {
 //        if let value = findindex(ofstring: "llamaa", in: strings){
 //            print(value)
 //        }
+        
+        
+        //...Extensions Practice
+        
+//        let oneInch = 2.00.mm
+//        print("One inch is \(oneInch) meters")
+//
+//        let threeft = 3.0.ft
+//        print("Three feet is \(threeft) meters")
+//
+//        let defaultRect = Rect()
+//        let memberwiseRect = Rect(origin: Point(x: 2.0, y: 2.0), size: Size(width: 5.0, height: 5.0))
+        
+//        3.repetition {
+//            print("Hello")
+//        }
+
+//      var sqvalue = 3
+//      let val =  sqvalue.square()
+        
+        var kindval = 1.Kind
+        
     }
     
     //........................Start Generics methods
@@ -65,6 +87,77 @@ class ViewController: UIViewController {
 //        return nil
 //    }
 }
+
+struct Size {
+    var width = 0.0, height = 0.0
+}
+
+struct Point {
+    var x = 0.0, y = 0.0
+}
+struct Rect {
+    var origin = Point()
+    var size = Size()
+}
+
+extension Rect{
+    init(center:Point,size:Size) {
+        let originX = center.x - (size.width / 2)
+        let originY = center.y - (size.height / 2)
+        self.init(origin:Point(x: originX, y: originY), size:size)
+    }
+}
+
+//extension Int {
+//    func repetition(task:()  -> Void) {
+//        for _ in 0..<self {
+//            task()
+//        }
+//    }
+//}
+
+//extension Int {
+//    mutating func square() {
+//        self = self * self
+//    }
+//}
+
+
+extension Int {
+    
+    enum Kind {
+        case negetive,zero,positive
+    }
+    
+    var Kind: Kind {
+        
+        switch self {
+        case 0:
+            return .zero
+            
+        case let x where x > 0 :
+            return .positive
+            
+        default:
+            return .negetive
+        }
+    }
+    
+    
+    
+}
+
+
+
+extension Double{
+    
+    var km:Double { return self*1_000.0}
+    var m:Double {return self}
+    var cm:Double { return self / 100.0}
+    var mm:Double{ return self / 1_000.0}
+    var ft:Double { return self / 3.28084}
+}
+
 
 //........Start This is non-generic struct
 //struct InStack {

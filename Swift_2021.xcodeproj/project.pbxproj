@@ -21,7 +21,6 @@
 		DB40A8412657EE34004D228D /* Optional_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB40A8402657EE34004D228D /* Optional_VC.swift */; };
 		DB4D916B265BA90900104321 /* Inheritance_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4D916A265BA90900104321 /* Inheritance_VC.swift */; };
 		DB547875266101B100150F9E /* ErrorHandling_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB547874266101B100150F9E /* ErrorHandling_VC.swift */; };
-		DB606DD526839D5300023E2A /* Swift_2021 copy-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB6EA95626839C24003FBB00 /* Swift_2021 copy-Info.plist */; };
 		DB6C366B26842C490010F79C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB318A6D2654871800660F78 /* Main.storyboard */; };
 		DB6EA90B268399C3003FBB00 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB318A782654871C00660F78 /* Info.plist */; };
 		DB6EA94126839C24003FBB00 /* ErrorHandling_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB547874266101B100150F9E /* ErrorHandling_VC.swift */; };
@@ -37,6 +36,7 @@
 		DB6EA94B26839C24003FBB00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB318A692654871800660F78 /* SceneDelegate.swift */; };
 		DB6EA94F26839C24003FBB00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB318A752654871C00660F78 /* LaunchScreen.storyboard */; };
 		DB6EA95026839C24003FBB00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB318A732654871C00660F78 /* Assets.xcassets */; };
+		DB83677227CCFB8600BA3561 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83677127CCFB8600BA3561 /* Extension.swift */; };
 		DBAE1A8E2679FE5E00DE41F1 /* TypeCasting_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAE1A8D2679FE5E00DE41F1 /* TypeCasting_VC.swift */; };
 		DBBFE3A9265A60EC008FFB68 /* SubScript_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBFE3A8265A60EC008FFB68 /* SubScript_VC.swift */; };
 		DBCF8E072682B40C00352B46 /* TableviewLoad_rowsAppendingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCF8E062682B40C00352B46 /* TableviewLoad_rowsAppendingVC.swift */; };
@@ -81,7 +81,7 @@
 		DB4D916A265BA90900104321 /* Inheritance_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inheritance_VC.swift; sourceTree = "<group>"; };
 		DB547874266101B100150F9E /* ErrorHandling_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandling_VC.swift; sourceTree = "<group>"; };
 		DB6EA95526839C24003FBB00 /* Swift_2021 copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift_2021 copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB6EA95626839C24003FBB00 /* Swift_2021 copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Swift_2021 copy-Info.plist"; path = "/Users/ravikumar/Documents/Swift_2021/Swift_2021 copy-Info.plist"; sourceTree = "<absolute>"; };
+		DB83677127CCFB8600BA3561 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		DBAE1A8D2679FE5E00DE41F1 /* TypeCasting_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeCasting_VC.swift; sourceTree = "<group>"; };
 		DBBFE3A8265A60EC008FFB68 /* SubScript_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubScript_VC.swift; sourceTree = "<group>"; };
 		DBCF8E062682B40C00352B46 /* TableviewLoad_rowsAppendingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableviewLoad_rowsAppendingVC.swift; sourceTree = "<group>"; };
@@ -127,7 +127,6 @@
 				DB318A802654871D00660F78 /* Swift_2021Tests */,
 				DB318A8B2654871D00660F78 /* Swift_2021UITests */,
 				DB318A652654871800660F78 /* Products */,
-				DB6EA95626839C24003FBB00 /* Swift_2021 copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +146,7 @@
 			children = (
 				DB318A672654871800660F78 /* AppDelegate.swift */,
 				DB318A692654871800660F78 /* SceneDelegate.swift */,
+				DB83677027CCFB7400BA3561 /* Extension */,
 				DB318A6B2654871800660F78 /* ViewController.swift */,
 				DB40A8402657EE34004D228D /* Optional_VC.swift */,
 				DBBFE3A8265A60EC008FFB68 /* SubScript_VC.swift */,
@@ -181,6 +181,14 @@
 				DB318A8E2654871D00660F78 /* Info.plist */,
 			);
 			path = Swift_2021UITests;
+			sourceTree = "<group>";
+		};
+		DB83677027CCFB7400BA3561 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DB83677127CCFB8600BA3561 /* Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,7 +339,6 @@
 			files = (
 				DB6EA94F26839C24003FBB00 /* LaunchScreen.storyboard in Resources */,
 				DB6EA95026839C24003FBB00 /* Assets.xcassets in Resources */,
-				DB606DD526839D5300023E2A /* Swift_2021 copy-Info.plist in Resources */,
 				DB6C366B26842C490010F79C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,6 +359,7 @@
 				DBCF8E072682B40C00352B46 /* TableviewLoad_rowsAppendingVC.swift in Sources */,
 				DB318A6C2654871800660F78 /* ViewController.swift in Sources */,
 				DB02E834268785B7005A4EDA /* ImagesDownload_VC.swift in Sources */,
+				DB83677227CCFB8600BA3561 /* Extension.swift in Sources */,
 				DB318A682654871800660F78 /* AppDelegate.swift in Sources */,
 				DB40A8412657EE34004D228D /* Optional_VC.swift in Sources */,
 				DB318A6A2654871800660F78 /* SceneDelegate.swift in Sources */,
